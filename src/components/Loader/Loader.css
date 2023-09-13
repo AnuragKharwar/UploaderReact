@@ -1,0 +1,19 @@
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+  height: 300px;
+  width: 550px;
+  border: 2px dashed #0096c7;
+  cursor: pointer;
+}
+.dropdown {
+  margin: 4px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  background-color: #999;
+}
