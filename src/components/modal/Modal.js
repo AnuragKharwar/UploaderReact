@@ -1,6 +1,6 @@
 import React from "react";
 import "./modal.css";
-import Preview from "./Preview/Preview";
+import Preview from "../Preview/Preview";
 const Modal = ({
   previewSrc,
   type,

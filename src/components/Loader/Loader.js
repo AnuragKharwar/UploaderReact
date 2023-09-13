@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "../modal/Modal";
 import "./Loader.css";
-import Preview from "../modal/Preview/Preview";
+import Preview from "../Preview/Preview";
 
 const Loader = () => {
   //keeping different state for files ans modal-show
