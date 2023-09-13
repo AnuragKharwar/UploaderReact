@@ -1,5 +1,5 @@
 import React from "react";
-import "./Preview.css";
+
 const Preview = ({ url, type, previewClick }) => {
   return (
     <div className="container">

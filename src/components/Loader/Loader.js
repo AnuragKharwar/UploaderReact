@@ -5,8 +5,8 @@ import Preview from "../Preview/Preview";
 
 const Loader = () => {
   //keeping different state for files ans modal-show
-  //also stroing file data in state
-  //later rendering those stored data Blob file conversion and opening it new window
+  //also storing file data,name,type in state for further use
+
   const [fileType, setFileType] = useState("application/pdf");
   const [fileInput, setInputFile] = useState();
   const [fileName, setFileName] = useState("");
@@ -24,6 +24,7 @@ const Loader = () => {
     const file = e.target.files[0];
     let size = file.size;
     let type = file.type;
+
     if (type !== fileType) {
       alert(`kindly select the  ${fileType} type file`);
       e.target.value = "";
@@ -33,6 +34,7 @@ const Loader = () => {
 
       if (size > 10) alert("File size muust not exceed 10Mb");
       else {
+        // if invalid valid selected
         if (fileType === "image/png" || fileType === "image.jpeg") {
           setSrcUrl(URL.createObjectURL(file));
         } else {
@@ -53,7 +55,6 @@ const Loader = () => {
   };
   const handlePreview = (e) => {
     if (fileInput) {
-      console.log("sdf");
       previewFile(fileInput, fileType);
     }
   };
